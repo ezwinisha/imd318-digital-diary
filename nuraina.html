@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kuromi Website - Nuraina Ezwinisha</title>
+  <style>
+    /* === GENERAL STYLES === */
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: url('https://i.pinimg.com/originals/6f/91/04/6f9104f0c896a5de2c59dbb1db2a7f48.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      text-align: center;
+      animation: fadeIn 2s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    header {
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(90,0,120,0.8)), 
+                  url('https://i.pinimg.com/originals/32/f1/8a/32f18a71b85d83a9d89e8c4d365af5a8.jpg') no-repeat center;
+      background-size: cover;
+      padding: 60px 0;
+      box-shadow: 0 0 30px #c77dff;
+      animation: glowHeader 3s infinite alternate;
+    }
+
+    @keyframes glowHeader {
+      from { box-shadow: 0 0 15px #c77dff; }
+      to { box-shadow: 0 0 35px #e0aaff; }
+    }
+
+    header h1 {
+      font-size: 2.8em;
+      color: #e0aaff;
+      letter-spacing: 3px;
+      text-shadow: 3px 3px 8px #000;
+      animation: floatText 3s ease-in-out infinite;
+    }
+
+    @keyframes floatText {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    header p {
+      color: #d0b3ff;
+      font-style: italic;
+      opacity: 0.9;
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 12px 0;
+      backdrop-filter: blur(10px);
+    }
+
+    nav a {
+      color: #e0aaff;
+      text-decoration: none;
+      margin: 0 18px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #fff;
+      text-shadow: 0 0 15px #e0aaff;
+    }
+
+    section {
+      background-color: rgba(0, 0, 0, 0.6);
+      margin: 40px auto;
+      width: 85%;
+      max-width: 900px;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 0 25px #5a189a;
+      animation: fadeUp 1.5s ease;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h2 {
+      color: #e0aaff;
+      text-transform: uppercase;
+      border-bottom: 2px solid #c77dff;
+      display: inline-block;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      background-color: rgba(255, 255, 255, 0.1);
+      margin: 10px auto;
+      padding: 10px;
+      border-radius: 10px;
+      max-width: 500px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    ul li:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #e0aaff;
+    }
+
+    img.profile {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 3px solid #e0aaff;
+      box-shadow: 0 0 20px #9d4edd;
+      margin-bottom: 15px;
+      animation: floatPic 4s ease-in-out infinite;
+    }
+
+    @keyframes floatPic {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .gallery img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 15px;
+      border: 3px solid #e0aaff;
+      margin: 10px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 0 15px #5a189a;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 25px #e0aaff;
+    }
+
+    footer {
+      background-color: #000;
+      color: #d0b3ff;
+      padding: 20px;
+      margin-top: 50px;
+      border-top: 3px solid #5a189a;
+      animation: glowFooter 3s infinite alternate;
+    }
+
+    @keyframes glowFooter {
+      from { box-shadow: 0 0 10px #c77dff; }
+      to { box-shadow: 0 0 25px #e0aaff; }
+    }
+
+    .kuromi {
+      width: 100px;
+      margin-top: 10px;
+      animation: floatPic 3s ease-in-out infinite;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>💜 Kuromi Universe 💀</h1>
+    <p>Created by Ewiniecha</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <img src="profile.jpg" alt="My Photo" class="profile">
+    <h2>About Me</h2>
+    <p>Hi! I'm <strong>Nuraina Ezwinisha</strong> 💜  
+    A UiTM student diploma in Information Management.  
+    I love Kuromi, design, technology, and all things aesthetic 🎀</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li>🎓 UiTM Kedah – Diploma in Information Management (IM110)</li>
+      <li>🏫 SMK Sultan Abdullah – SPM Graduate</li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>💻 HTML, CSS, and Web Design</li>
+      <li>🎨 Canva & Creative Presentation</li>
+      <li>📂 Archival and Information Management</li>
+    </ul>
+  </section>
+
+  <section id="hobbies">
+    <h2>Hobbies</h2>
+    <ul>
+      <li>🎧 Listening to music & K-pop</li>
+      <li>📷 Taking aesthetic photos</li>
+      <li>🎮 Playing games & exploring creative designs</li>
+      
+    </ul>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="family1.jpg" alt="Kuromi 1">
+      <img src="photo1.jpg" alt="Kuromi 2">
+      <img src="photo2.jpg" alt="Kuromi 3">
+      <img src="photo3.jpg" alt="Kuromi 4">
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>📧 Email: <a href="mailto:nurainaezwinisha@gmail.com" style="color:#c77dff;">nurainaezwinisha@gmail.com</a></p>
+    <p>📸 Instagram: <a href="https://instagram.com/" target="_blank" style="color:#c77dff;">@ezzwinnn</a></p>
+    <img src="kuromi2.png" alt="Kuromi" class="kuromi">
+  </section>
+
+  <footer>
+    <p>© 2025 EwinChan 💜 | Kuromi Edition 🌙</p>
+  </footer>
+</body>
+</html>
